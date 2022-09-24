@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+    <testsuite name="src/hooks/useCounter.spec.js" timestamp="2022-09-24T23:26:48.109Z" hostname="MacBook-Pro-2.local" tests="4" failures="0" errors="0" skipped="0" time="0.025">
+        <testcase classname="src/hooks/useCounter.spec.js" name="useCounter hook &gt; should set initial value to 0" time="0.017">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/hooks/useCounter.spec.js" name="useCounter hook &gt; should reset counter to updated initial value" time="0.003">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/hooks/useCounter.spec.js" name="useCounter hook &gt; should add 1 to counter when increment function is called" time="0.001">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/hooks/useCounter.spec.js" name="useCounter hook &gt; should subtract 1 to counter when increment function is called" time="0.002">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/hooks/useTimer.spec.js" timestamp="2022-09-24T23:26:48.127Z" hostname="MacBook-Pro-2.local" tests="4" failures="0" errors="0" skipped="0" time="0.028">
+        <testcase classname="src/hooks/useTimer.spec.js" name="useTimer hook &gt; should set initial value to 0" time="0.016">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/hooks/useTimer.spec.js" name="useTimer hook &gt; should reset timer to updated initial value" time="0.004">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/hooks/useTimer.spec.js" name="useTimer hook &gt; should add 1 to timer for each second that passes when start() is called" time="0.004">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/hooks/useTimer.spec.js" name="useTimer hook &gt; should stop the timer when stop() is called" time="0.002">
+            <system-err>
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/Counter.spec.jsx" timestamp="2022-09-24T23:26:48.128Z" hostname="MacBook-Pro-2.local" tests="1" failures="1" errors="0" skipped="0" time="0.1">
+        <testcase classname="src/components/Counter.spec.jsx" name="Counter basic example &gt; Increments counter when button is clicked" time="0.098">
+            <failure message="Unable to find an accessible element with the role &quot;button&quot; and name &quot;count is: 1&quot;
+
+Here are the accessible roles:
+
+  heading:
+
+  Name &quot;Example 1 - Simple Counter&quot;:
+  [36m&lt;h2 /&gt;[39m
+
+  --------------------------------------------------
+  button:
+
+  Name &quot;count is: 0&quot;:
+  [36m&lt;button[39m
+    [33mtype[39m=[32m&quot;button&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;h2&gt;[39m
+      [0mExample 1 - Simple Counter[0m
+    [36m&lt;/h2&gt;[39m
+    [36m&lt;button[39m
+      [33mtype[39m=[32m&quot;button&quot;[39m
+    [36m&gt;[39m
+      [0mcount is: [0m
+      [0m0[0m
+    [36m&lt;/button&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/body&gt;[39m" type="TestingLibraryElementError">
+TestingLibraryElementError: Unable to find an accessible element with the role &quot;button&quot; and name &quot;count is: 1&quot;
+
+Here are the accessible roles:
+
+  heading:
+
+  Name &quot;Example 1 - Simple Counter&quot;:
+  [36m&lt;h2 /&gt;[39m
+
+  --------------------------------------------------
+  button:
+
+  Name &quot;count is: 0&quot;:
+  [36m&lt;button[39m
+    [33mtype[39m=[32m&quot;button&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;h2&gt;[39m
+      [0mExample 1 - Simple Counter[0m
+    [36m&lt;/h2&gt;[39m
+    [36m&lt;button[39m
+      [33mtype[39m=[32m&quot;button&quot;[39m
+    [36m&gt;[39m
+      [0mcount is: [0m
+      [0m0[0m
+    [36m&lt;/button&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/body&gt;[39m
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:40:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:111:19
+ ❯ src/components/Counter.spec.jsx:17:63
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/Animal.spec.jsx" timestamp="2022-09-24T23:26:48.130Z" hostname="MacBook-Pro-2.local" tests="5" failures="0" errors="0" skipped="0" time="0.276">
+        <testcase classname="src/components/Animal.spec.jsx" name="Animal useEffect example &gt; Animal details are visible when component first renders" time="0.148">
+        </testcase>
+        <testcase classname="src/components/Animal.spec.jsx" name="Animal useEffect example &gt; Error message displayed if no data is returned" time="0.012">
+        </testcase>
+        <testcase classname="src/components/Animal.spec.jsx" name="Animal useEffect example &gt; Loading message appears while data is being fetched" time="0.009">
+        </testcase>
+        <testcase classname="src/components/Animal.spec.jsx" name="Animal useEffect example &gt; Loading message disappears when data has been fetched" time="0.035">
+        </testcase>
+        <testcase classname="src/components/Animal.spec.jsx" name="Animal useEffect example &gt; Deletes the animal when exterminate button is pressed" time="0.068">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/UserProfile.spec.jsx" timestamp="2022-09-24T23:26:48.130Z" hostname="MacBook-Pro-2.local" tests="6" failures="0" errors="0" skipped="0" time="0.269">
+        <testcase classname="src/components/UserProfile.spec.jsx" name="User profile &gt; Login button is visible when user is logged out" time="0.084">
+        </testcase>
+        <testcase classname="src/components/UserProfile.spec.jsx" name="User profile &gt; Login button is not visible when user is logged in" time="0.044">
+        </testcase>
+        <testcase classname="src/components/UserProfile.spec.jsx" name="User profile &gt; Logout button is visible when user is logged in" time="0.036">
+        </testcase>
+        <testcase classname="src/components/UserProfile.spec.jsx" name="User profile &gt; Logout button is not visible when user is logged out" time="0.005">
+        </testcase>
+        <testcase classname="src/components/UserProfile.spec.jsx" name="User profile &gt; Correct helper text is displayed when user is logged in or logged out" time="0.032">
+        </testcase>
+        <testcase classname="src/components/UserProfile.spec.jsx" name="User profile &gt; User is logged out successfully when log out button is pressed" time="0.065">
+        </testcase>
+    </testsuite>
+</testsuites>
