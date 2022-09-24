@@ -8,8 +8,5 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './setupTests.js',
-    reporters: process.env.GITHUB_ACTIONS
-      ? 'junit'
-      : 'default'
   },
 });
