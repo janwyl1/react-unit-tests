@@ -8,14 +8,14 @@ Uses Vite for bundling. ESLint for static code testing and formatting with Prett
 
 ## Installation
 
-Clone the repo and run `npm install`
+Clone the repo and run `yarn install`
 
 ## Start
 
-After the successfull installation of the packages: `npm run dev`
+After the successfull installation of the packages: `yarn run dev`
 
 ## Tests
 
-To run unit tests in watch mode, use: `npm run test`
+To run unit tests in watch mode, use: `yarn test`
 
-To generate unit test coverage information, use `npm run coverage`
+To generate unit test coverage information, use `yarn coverage`
