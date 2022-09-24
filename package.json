@@ -11,7 +11,7 @@
     "lint": "yarn lint:format && yarn lint:fix",
     "prepare": "husky install",
     "test": "vitest ",
-    "test:ci": "vitest --reporter=junit --outputFile.junit=./unit-test-results.xml",
+    "test:ci": "vitest --run",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
