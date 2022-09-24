@@ -8,7 +8,7 @@ describe('Counter basic example', () => {
     render(<Counter />);
     expect(
       screen.getByRole('button', {
-        name: 'count is: 0',
+        name: 'count is: 1',
       })
     );
 
