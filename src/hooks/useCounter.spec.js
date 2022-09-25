@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import useCounter from './useCounter';
@@ -30,16 +30,20 @@ describe('useCounter hook', () => {
   it('should add 1 to counter when increment function is called', () => {
     const { result } = renderHook(() => useCounter());
 
-    result.current.increment();
-
+    act(() => {
+      result.current.increment();
+    })
+    
     expect(result.current.count).toBe(1);
   });
 
   it('should subtract 1 to counter when increment function is called', () => {
     const { result } = renderHook(() => useCounter());
 
-    result.current.decrement();
-
+    act(() => {
+      result.current.decrement();
+    })
+  
     expect(result.current.count).toBe(-1);
   });
 });

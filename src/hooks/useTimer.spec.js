@@ -1,10 +1,14 @@
-// We use react-hooks-testing-library for testing custom hooks
-// See: https://github.com/testing-library/react-hooks-testing-library
+// We use the renderHook method for testing custom hooks
+// See: https://testing-library.com/docs/react-testing-library/api/#renderhook
 
 // We can mock time in our tests
+// E.g. we use vi.advanceTimersByTime(2000) to advance the system clock by 2 seconds
 // See: https://vitest.dev/guide/mocking.html
 
-import { act, renderHook } from '@testing-library/react-hooks';
+// act() simulates how our hook will act in a browser, allowing us to update the values within it. 
+// See: https://reactjs.org/docs/test-utils.html#act
+
+import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import useTimer from './useTimer';
@@ -32,8 +36,7 @@ describe('useTimer hook', () => {
 
     rerender({ initialValue: 10 });
 
-    act(() => {
-      // act simulates how our hook will act in a browser, allowing us to update the values within it. For more details on act, please see https://reactjs.org/docs/test-utils.html#act
+    act(() => {  
       result.current.reset();
     });
 
@@ -45,10 +48,10 @@ describe('useTimer hook', () => {
 
     act(() => {
       result.current.start();
+      vi.advanceTimersByTime(3000); // advance the system clock by 3 seconds
+
     });
-
-    vi.advanceTimersByTime(3000); // advance the system clock by 3 seconds
-
+    
     expect(await result.current.time).toBe(3);
   });
 
@@ -57,15 +60,13 @@ describe('useTimer hook', () => {
 
     act(() => {
       result.current.start();
+      vi.advanceTimersByTime(2000); // advance the system clock by 2 seconds
     });
-
-    vi.advanceTimersByTime(2000); // advance the system clock by 2 seconds
 
     act(() => {
       result.current.stop(); // stop the timer
+      vi.advanceTimersByTime(3000); // advance the system clock by 3 seconds
     });
-
-    vi.advanceTimersByTime(3000); // advance the system clock by 3 seconds
 
     expect(await result.current.time).toBe(2); // because we stopped the timer previously, it should still only be 2 seconds
   });
