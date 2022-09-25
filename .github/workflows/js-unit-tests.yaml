@@ -25,11 +25,3 @@ jobs:
         cache: 'yarn'
     - run: yarn install
     - run: yarn test:ci
-
-    - name: Test Report
-      uses: dorny/test-reporter@v1
-      if: success() || failure()    # run this step even if previous step failed
-      with:
-        name: Vitest Tests            # Name of the check run which will be created
-        path: ./unit-test-results*.xml    # Path to test results
-        reporter: jest-junit        # Format of test results
