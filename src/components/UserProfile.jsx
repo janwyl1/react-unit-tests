@@ -29,6 +29,7 @@ const UserProfile = () => {
       <p>Our tests need access to these context objects which is demonstrated in 2 different ways:</p>
       <p>We wrap the AuthContext provider around the UserProfile component in our test's render method (in UserProfile.spec.jsx) - only tests defined in UserProfile.spec.jsx have access to this context.</p>
       <p>We create a custom render method that overrides react-testing-library's render method (in test-utils.js) - any tests that use the render method will have access to this context by default.</p>
+      <p>See: UserProfile.jsx / UserProfile.spec.jsx / authContext.js / colorContext.js / test-utils.js </p>
       <h3>{authCtx.isLoggedIn ? 'You are logged in' : 'You are logged out'}</h3>
       {!authCtx.isLoggedIn && (
         <button onClick={loginHandler} style={{ background: colorCtx.color }}>
