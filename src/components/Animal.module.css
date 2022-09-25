@@ -18,13 +18,13 @@
   max-width: 100%;
 }
 
-.animal h1,
-.animal h2 {
+.animal h2,
+.animal h3 {
   margin: 0 0 8px 0;
   padding: 0;
 }
 
-.animal h1 {
+.animal h2 {
   font-size: 28px;
 }
 

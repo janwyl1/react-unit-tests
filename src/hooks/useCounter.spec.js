@@ -1,3 +1,9 @@
+// We use the renderHook method for testing custom hooks
+// See: https://testing-library.com/docs/react-testing-library/api/#renderhook
+
+// act() simulates how our hook will act in a browser, allowing us to update the values within it. We need to use act when testing custom hooks 
+// See: https://reactjs.org/docs/test-utils.html#act
+
 import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 

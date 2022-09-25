@@ -36,8 +36,8 @@ const Animal = (props) => {
   const animalDetails = (
     <div>
       <img src={animal.image_link} alt={`a cute looking ${animal.name}`} />
-      <h1>{animal.name}</h1>
-      <h2>{animal.animal_type}</h2>
+      <h3>{animal.name}</h3>
+      <h4>{animal.animal_type}</h4>
       <ul>
         <li>Latin name: {animal.latin_name}</li>
         <li>Habitat: {animal.habitat}</li>
@@ -60,6 +60,9 @@ const Animal = (props) => {
   return (
     <>
       <h2>Example 2 - useEffect hook with mocked network request</h2>
+      <p>Uses Mock Service Worker (MSW) to intercept network requests and return a mocked response.</p>
+      <p>We setup the mock server in setupTests.js and create mock responses in mocks/handlers.js</p>
+      <p>See: Animal.jsx / Animal.spec.jsx</p>
       <div className={styles.animal}>
         {errorMsg && <p>{errorMsg}</p>}
         {isLoading && <p className="loading">Loading...</p>}

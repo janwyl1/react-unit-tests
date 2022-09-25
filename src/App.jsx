@@ -11,6 +11,8 @@ function App() {
   return (
     <ColorContextProvider>
       <div className="App">
+        <h1>React Unit Testing Examples</h1>
+        <hr />
         <Counter />
         <hr />
         <Animal apiUrl="https://zoo-animal-api.herokuapp.com/animals/rand" />
@@ -20,7 +22,9 @@ function App() {
         </AuthContextProvider>
         <hr />
         <h2>Example 4 - Custom hook</h2>
-        <p>See useCounter.js / useCounter.spec.js</p>
+        <p>Uses renderHook and act to test a custom hook</p>
+        <p>This custom hook isn't used in any components</p>
+        <p>See: useCounter.js / useCounter.spec.js</p>
         <hr />
         <Timer />
       </div>
