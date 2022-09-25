@@ -16,6 +16,10 @@ After the successfull installation of the packages: `yarn run dev`
 
 ## Tests
 
+### Running Locally
 To run unit tests in watch mode, use: `yarn test`
-
 To generate unit test coverage information, use `yarn coverage`
+
+### Running in CI
+To run tests in Github Actions, use `yarn test:ci`
+See `.github/workflows/js-unit-tests.yaml` for workflow settings
