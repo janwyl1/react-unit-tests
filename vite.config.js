@@ -10,7 +10,10 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './setupTests.js',
     reporters: process.env.GITHUB_ACTIONS
-      ? [new GithubActionsReporter(), 'json-summary', 'json']
-      : 'default'
+      ? new GithubActionsReporter()
+      : 'default',
+    coverage: {
+      reporter: ['text', 'json-summary', 'json']
+    }
   },
 });
