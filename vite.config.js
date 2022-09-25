@@ -13,7 +13,11 @@ export default defineConfig({
       ? new GithubActionsReporter()
       : 'default',
     coverage: {
-      reporter: ['text', 'json-summary', 'json']
+      reporter: ['text', 'json-summary', 'json'],
+      lines: 95,
+      branches: 95,
+      functions: 95,
+      statements: 95
     }
   },
 });
