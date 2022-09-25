@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const ColorContext = React.createContext({
-  color: 'red',
+  color: false,
   updateColor: () => {},
 });
 
 export const ColorContextProvider = (props) => {
   const [color, setColor] = useState(false);
-
-  useEffect(() => {
-    setColor('red');
-  }, []);
 
   const updateColor = (color) => {
     setColor(color);
