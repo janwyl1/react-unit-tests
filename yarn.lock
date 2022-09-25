@@ -655,6 +655,14 @@
     magic-string "^0.26.2"
     react-refresh "^0.14.0"
 
+"@vitest/coverage-c8@^0.23.4":
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/@vitest/coverage-c8/-/coverage-c8-0.23.4.tgz#bf9d916815b83f10b5b3700fae4fd9f38d1c596f"
+  integrity sha512-jmD00a5DQH9gu9K+YdvVhcMuv2CzHvU4gCnySS40Ec5hKlXtlCzRfNHl00VnhfuBeaQUmaQYe60BLT413HyDdg==
+  dependencies:
+    c8 "^7.12.0"
+    vitest "0.23.4"
+
 "@xmldom/xmldom@^0.7.5":
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.5.tgz#09fa51e356d07d0be200642b0e4f91d8e6dd408d"
@@ -3507,7 +3515,7 @@ vitest-github-actions-reporter@^0.8.3:
   dependencies:
     "@actions/core" "^1.9.1"
 
-vitest@^0.23.4:
+vitest@0.23.4, vitest@^0.23.4:
   version "0.23.4"
   resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.23.4.tgz#7ebea620f203f4df09a27ca17819dc9da61f88ef"
   integrity sha512-iukBNWqQAv8EKDBUNntspLp9SfpaVFbmzmM0sNcnTxASQZMzRw3PsM6DMlsHiI+I6GeO5/sYDg3ecpC+SNFLrQ==

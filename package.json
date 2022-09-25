@@ -11,7 +11,7 @@
     "lint": "yarn lint:format && yarn lint:fix",
     "prepare": "husky install",
     "test": "vitest ",
-    "test:ci": "vitest --run",
+    "test:ci": "vitest --run --coverage",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
-    "c8": "^7.12.0",
+    "@vitest/coverage-c8": "^0.23.4",
     "cross-fetch": "^3.1.5",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
