@@ -61,7 +61,7 @@ describe('Animal useEffect example', () => {
       name: 'Exterminate',
     });
     userEvent.click(exterminateBtn);
-    expect(await screen.findByText('😭 You Monster! Fetch a new animal?'));
+    expect(await screen.findByText('😭 You monster! Fetch a new animal?'));
     expect(await screen.findByRole('button', { name: 'New Animal' }));
   });
 });

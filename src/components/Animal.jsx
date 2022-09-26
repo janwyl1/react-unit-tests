@@ -52,7 +52,7 @@ const Animal = (props) => {
 
   const newAnimal = (
     <div>
-      <p>😭 You Monster! Fetch a new animal?</p>
+      <p>😭 You monster! Fetch a new animal?</p>
       <button onClick={() => sendRequest()}>New Animal</button>
     </div>
   );
