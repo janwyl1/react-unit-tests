@@ -28,5 +28,6 @@ See `.github/workflows/js-unit-tests.yaml` for workflow settings
 
 
 ## Resources
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [List of Accessible Roles](https://www.w3.org/TR/html-aria/#docconformance)
 - [JavaScript Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
