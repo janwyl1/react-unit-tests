@@ -25,3 +25,8 @@ To generate unit test coverage information, use `yarn coverage`
 To run tests in Github Actions, use `yarn test:ci`
 
 See `.github/workflows/js-unit-tests.yaml` for workflow settings
+
+
+## Resources
+- [List of Accessible Roles](https://www.w3.org/TR/html-aria/#docconformance)
+- [JavaScript Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
