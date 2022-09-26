@@ -1,0 +1,11 @@
+.ageChecker label, .ageChecker input{
+    margin-right: 8px;
+}
+.ageChecker label {
+    margin-top: 1em;
+    margin-bottom: 4px;
+    display: block;
+}
+.ageChecker h4 {
+    margin-top: 1em;
+}
