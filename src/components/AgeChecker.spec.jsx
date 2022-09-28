@@ -48,7 +48,7 @@ describe('Age Checker', () => {
             await userEvent.type(dobInpt, 'invalid')
             await userEvent.click(submitBtn)
 
-            const errorTxt = await screen.findByText('Error: Invalid date')
+            const errorTxt = await screen.findByText('Error: Invalid date - date should be in DD/MM/YYYY format')
             expect(errorTxt).toBeVisible()
         })
 

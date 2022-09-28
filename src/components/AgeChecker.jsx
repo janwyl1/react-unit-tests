@@ -31,7 +31,7 @@ const AgeChecker = () => {
         } else if (!dob){
             setError('Please enter your date of birth')
         } else {
-            setError('Invalid date')
+            setError('Invalid date - date should be in DD/MM/YYYY format')
         }
     }
    
