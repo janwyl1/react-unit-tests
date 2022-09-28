@@ -38,7 +38,7 @@ const AgeChecker = () => {
     return (
         <>
             <h2>Example 6 - Form input field with validation and mocked date</h2>
-            <p>Tests form submission and validation</p>
+            <p>Tests form submission and error handling</p>
             <p>We mock the date using vi.useFakeTimers() and vi.setSystemTime() so that we our tests doesn't fail when the date changes.</p>
             <p>See: AgeChecker.jsx / AgeChecker.spec.jsx</p>
             <div className={styles.ageChecker}>
