@@ -30,8 +30,9 @@ jobs:
       if: always() # Also generate the report if tests are failing
       uses:  davelosert/vitest-coverage-report-action@v1
     
-    - uses: 8398a7/action-slack@v3
-    - name: Send slack notification
+   
+    - name: Send Slack Notification
+      uses: 8398a7/action-slack@v3
       with:
         status: ${{ job.status }}
         fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest # selectable (default: repo,message)
