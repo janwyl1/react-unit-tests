@@ -26,7 +26,9 @@ To run tests in Github Actions, use `yarn test:ci`
 
 See `.github/workflows/js-unit-tests.yaml` for workflow settings
 
-
+**Setup Slack Notifications**
+[Find existing / create new Slack webhook url](https://helloparallax.slack.com/apps/A0F7XDUAZ-incoming-webhooks)
+[Add SLACK_WEBHOOK_URL secret to github repo](https://github.com/parallax/react-unit-tests/settings/secrets/actions)
 ## Resources
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [List of Accessible Roles](https://www.w3.org/TR/html-aria/#docconformance)
