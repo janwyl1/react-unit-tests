@@ -18,23 +18,23 @@ jobs:
         node-version: [16.x]
         
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - run: yarn install
-      - run: yarn test:ci
-      - name: 'Report Coverage'
-        if: always() # Also generate the report if tests are failing
-        uses:  davelosert/vitest-coverage-report-action@v1
-      
-      - uses: 8398a7/action-slack@v3
-      - name: Send slack notification
-        with:
-          status: ${{ job.status }}
-          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest # selectable (default: repo,message)
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
-        if: always() # Pick up events even if the job fails or is canceled.
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - run: yarn install
+    - run: yarn test:ci
+    - name: 'Report Coverage'
+      if: always() # Also generate the report if tests are failing
+      uses:  davelosert/vitest-coverage-report-action@v1
+    
+    - uses: 8398a7/action-slack@v3
+    - name: Send slack notification
+      with:
+        status: ${{ job.status }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest # selectable (default: repo,message)
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+      if: always() # Pick up events even if the job fails or is canceled.
