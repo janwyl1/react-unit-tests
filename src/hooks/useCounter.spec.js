@@ -13,7 +13,7 @@ describe('useCounter hook', () => {
   it('should set initial value to 0', () => {
     const { result } = renderHook(() => useCounter());
 
-    expect(result.current.count).toBe(0);
+    expect(result.current.count).toBe(1);
   });
 
   it('should reset counter to updated initial value', () => {
