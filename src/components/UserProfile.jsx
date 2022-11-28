@@ -1,5 +1,6 @@
 import { useContext, useEffect } from 'react';
 
+import { AuthContextProvider } from '../context/authContext';
 import AuthContext from '../context/authContext';
 import ColorContext from '../context/colorContext';
 import styles from './UserProfile.module.css';
@@ -23,6 +24,7 @@ const UserProfile = () => {
   }, [authCtx.isLoggedIn])
 
   return (
+    <AuthContextProvider>
     <div className={styles.userprofile}>
       <h2>Example 3 - Context</h2>
       <p>Uses 2 different context objects - authContext and colorContext.</p>
@@ -42,6 +44,7 @@ const UserProfile = () => {
         </button>
       )}
     </div>
+    </AuthContextProvider>
   );
 };
 

@@ -22,3 +22,12 @@ hr {
     margin-top: 1em;
     margin-bottom: 2em;
 }
+
+nav a {
+    margin-right: 1em;
+    line-height: 1.5;
+}
+
+nav {
+    margin-bottom: 2em;
+}
