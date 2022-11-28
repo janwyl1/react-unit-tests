@@ -63,6 +63,7 @@ const Animal = (props) => {
       <p>Uses Mock Service Worker (MSW) to intercept network requests and return a mocked response.</p>
       <p>We setup the mock server in setupTests.js and create mock responses in mocks/handlers.js</p>
       <p>See: Animal.jsx / Animal.spec.jsx</p>
+      <p>Note: The component displays an error now as the API is no longer available - https://zoo-animal-api.herokuapp.com/</p>
       <div className={styles.animal}>
         {errorMsg && <p>{errorMsg}</p>}
         {isLoading && <p className="loading">Loading...</p>}
